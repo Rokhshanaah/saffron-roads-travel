@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Saffron Roads — small-group Silk Road journeys through Herat, Isfahan, Samarkand, Cappadocia and Hunza."
+    />
+    <title>Saffron Roads — Silk Road Journeys</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,650;1,9..144,500;1,9..144,650&family=Outfit:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css?v=3" />
+  </head>
+  <body>
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader-mark">
+        <img src="images/logo.svg" alt="" />
+        <p>Saffron Roads</p>
+      </div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <header class="site-header" id="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="logo" href="#top">
+          <img src="images/logo.svg" alt="" />
+          <span>Saffron</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#destinations" data-i18n="nav.destinations">Destinations</a></li>
+          <li><a href="#experiences" data-i18n="nav.experiences">Experiences</a></li>
+          <li><a href="#stories" data-i18n="nav.stories">Stories</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-tools">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang="en" class="is-active">EN</button>
+            <button type="button" data-lang="fa">فا</button>
+            <button type="button" data-lang="ps">پښ</button>
+          </div>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <span class="theme-sun" aria-hidden="true"></span>
+            <span class="theme-moon" aria-hidden="true"></span>
+          </button>
+          <a class="btn btn-sm btn-solid header-cta" href="#contact" data-i18n="nav.plan">Plan a journey</a>
+          <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+            <span class="sr-only" data-i18n="nav.menu">Menu</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <div class="mobile-menu-inner">
+        <p class="mobile-kicker" data-i18n="brand.kicker">Silk Road atelier</p>
+        <a href="#destinations" data-i18n="nav.destinations">Destinations</a>
+        <a href="#experiences" data-i18n="nav.experiences">Experiences</a>
+        <a href="#stories" data-i18n="nav.stories">Stories</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a class="btn btn-solid" href="#contact" data-i18n="nav.plan">Plan a journey</a>
+      </div>
+    </div>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Boutique travel atelier · Est. 2019</p>
+          <h1 data-i18n="hero.title">The silk road, rewritten for the senses.</h1>
+          <p class="lead" data-i18n="hero.lead">
+            Small-group journeys through Herat, Isfahan, Samarkand and the high valleys — paced slowly, cooked well, remembered for years.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#destinations" data-i18n="hero.cta">Explore routes</a>
+            <button class="btn btn-ghost" id="film-btn" type="button" data-i18n="hero.secondary">Watch the film</button>
+          </div>
+          <dl class="hero-stats">
+            <div>
+              <dt data-count="18">0</dt>
+              <dd data-i18n="hero.stat1">departures a year</dd>
+            </div>
+            <div>
+              <dt data-count="6">0</dt>
+              <dd data-i18n="hero.stat2">silk-road cities</dd>
+            </div>
+            <div>
+              <dt data-count="12">0</dt>
+              <dd data-i18n="hero.stat3">guests per group</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal delay-2">
+          <figure class="hero-frame">
+            <img src="images/hero.jpg" alt="Blue mosque under warm evening light" width="1600" height="1066" />
+            <figcaption class="hero-badge">
+              <span data-i18n="hero.badgeLabel">Next departure</span>
+              <strong data-i18n="hero.badgeDate">April 2027 · Herat</strong>
+            </figcaption>
+          </figure>
+          <figure class="hero-stack">
+            <img src="images/cappadocia.jpg" alt="Soft morning light over Cappadocia valleys" width="1200" height="800" />
+          </figure>
+          <div class="float-card">
+            <img src="images/spices.jpg" alt="Saffron threads and spices in a market" />
+            <p data-i18n="hero.float">Harvest breakfasts in Khorasan</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Herat</span><span>Isfahan</span><span>Samarkand</span><span>Cappadocia</span><span>Hunza</span><span>Khorasan</span>
+          <span>Herat</span><span>Isfahan</span><span>Samarkand</span><span>Cappadocia</span><span>Hunza</span><span>Khorasan</span>
+        </div>
+      </div>
+
+      <section class="section destinations" id="destinations">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>01</span> <span data-i18n="dest.eyebrow">Where we walk</span></p>
+          <h2 data-i18n="dest.title">Six rooms of the old road</h2>
+          <p data-i18n="dest.lead">Cities of tile and lapis, valleys of apricot light, kitchens that still measure time in saffron.</p>
+        </header>
+
+        <div class="filters reveal" id="filters">
+          <button type="button" class="chip is-active" data-filter="all" data-i18n="filter.all">All</button>
+          <button type="button" class="chip" data-filter="cities" data-i18n="filter.cities">Cities</button>
+          <button type="button" class="chip" data-filter="landscapes" data-i18n="filter.landscapes">Landscapes</button>
+          <button type="button" class="chip" data-filter="culinary" data-i18n="filter.culinary">Culinary</button>
+        </div>
+
+        <div class="dest-grid" id="dest-grid">
+          <article class="place featured reveal" data-category="cities" data-place="herat">
+            <button type="button" class="place-open" data-place="herat">
+              <img src="images/istanbul.jpg" alt="Grand blue architecture in Herat at dusk" />
+              <div class="place-copy">
+                <p class="place-meta" data-i18n="place.herat.meta">Afghanistan · 6 days</p>
+                <h3 data-i18n="place.herat.title">Herat, the western lantern</h3>
+                <p data-i18n="place.herat.text">Minarets, courtyards and the quiet of the citadel after the last call to prayer.</p>
+              </div>
+            </button>
+          </article>
+
+          <article class="place reveal delay-1" data-category="cities" data-place="isfahan">
+            <button type="button" class="place-open" data-place="isfahan">
+              <img src="images/isfahan.jpg?v=2" alt="Golden minarets and domes under a clear evening sky in Isfahan" />
+              <div class="place-copy">
+                <p class="place-meta" data-i18n="place.isfahan.meta">Iran · 5 days</p>
+                <h3 data-i18n="place.isfahan.title">Isfahan, half the world</h3>
+              </div>
+            </button>
+          </article>
+
+          <article class="place reveal delay-2" data-category="cities" data-place="samarkand">
+            <button type="button" class="place-open" data-place="samarkand">
+              <img src="images/medina.jpg" alt="Monumental silk-road architecture in Samarkand" />
+              <div class="place-copy">
+                <p class="place-meta" data-i18n="place.samarkand.meta">Uzbekistan · 4 days</p>
+                <h3 data-i18n="place.samarkand.title">Samarkand, the mosaic court</h3>
+              </div>
+            </button>
+          </article>
+
+          <article class="place reveal" data-category="landscapes" data-place="cappadocia">
+            <button type="button" class="place-open" data-place="cappadocia">
+              <img src="images/cappadocia.jpg" alt="Stone valleys of Cappadocia in morning haze" />
+              <div class="place-copy">
+                <p class="place-meta" data-i18n="place.cappadocia.meta">Türkiye · 4 days</p>
+                <h3 data-i18n="place.cappadocia.title">Cappadocia, carved light</h3>
+              </div>
+            </button>
+          </article>
+
+          <article class="place reveal delay-1" data-category="landscapes" data-place="hunza">
+            <button type="button" class="place-open" data-place="hunza">
+              <img src="images/mountains.jpg" alt="Snow peaks above the Hunza valley" />
+              <div class="place-copy">
+                <p class="place-meta" data-i18n="place.hunza.meta">Pakistan · 7 days</p>
+                <h3 data-i18n="place.hunza.title">Hunza, the high orchard</h3>
+              </div>
+            </button>
+          </article>
+
+          <article class="place reveal delay-2" data-category="culinary" data-place="khorasan">
+            <button type="button" class="place-open" data-place="khorasan">
+              <img src="images/spices.jpg" alt="Close-up of saffron and spice mounds" />
+              <div class="place-copy">
+                <p class="place-meta" data-i18n="place.khorasan.meta">Khorasan · 3 days</p>
+                <h3 data-i18n="place.khorasan.title">Khorasan, saffron tables</h3>
+              </div>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experiences" id="experiences">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>02</span> <span data-i18n="exp.eyebrow">How it feels</span></p>
+          <h2 data-i18n="exp.title">Three tempos, one road</h2>
+        </header>
+
+        <div class="exp-grid">
+          <article class="exp-card reveal">
+            <div class="exp-img">
+              <img src="images/balloons.jpg" alt="Hot air balloons lifting over Cappadocia at dawn" />
+              <span>01</span>
+            </div>
+            <h3 data-i18n="exp.1.title">Dawn over the stone valleys</h3>
+            <p data-i18n="exp.1.text">We rise before the market. Tea first, then a silent walk while the rock still holds the night.</p>
+          </article>
+          <article class="exp-card reveal delay-1">
+            <div class="exp-img">
+              <img src="images/camp.jpg" alt="Canvas tents under a night sky in the desert" />
+              <span>02</span>
+            </div>
+            <h3 data-i18n="exp.2.title">Nights in the open desert</h3>
+            <p data-i18n="exp.2.text">Low fires, bread on the coals, and a sky that still has room for every star.</p>
+          </article>
+          <article class="exp-card reveal delay-2">
+            <div class="exp-img">
+              <img src="images/desert.jpg" alt="Golden sand dunes under a clear sky" />
+              <span>03</span>
+            </div>
+            <h3 data-i18n="exp.3.title">Long light, slow miles</h3>
+            <p data-i18n="exp.3.text">We travel fewer kilometres than most tours — and stay long enough to learn the baker’s name.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section philosophy" id="philosophy">
+        <div class="phil-media reveal">
+          <img src="images/traveler.jpg" alt="Traveler walking a quiet mountain path with a backpack" />
+          <img class="phil-inset" src="images/camp.jpg" alt="A small camp beside still water" />
+        </div>
+        <div class="phil-copy reveal delay-1">
+          <p class="eyebrow"><span>03</span> <span data-i18n="phil.eyebrow">Our pace</span></p>
+          <h2 data-i18n="phil.title">Not more places. Better hours.</h2>
+          <p data-i18n="phil.text">
+            Saffron Roads is a small atelier, not a fleet. We keep groups under twelve, hire local hosts, and leave room in every day for tea that was not on the itinerary.
+          </p>
+          <blockquote>
+            <p data-i18n="phil.quote">The road is already famous. We come to listen to the rooms beside it.</p>
+            <cite data-i18n="phil.cite">— Leila N., founder</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section stories" id="stories">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>04</span> <span data-i18n="stories.eyebrow">Letters from the road</span></p>
+          <h2 data-i18n="stories.title">Guests, in their own words</h2>
+        </header>
+        <div class="story-grid" id="story-grid"></div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="eyebrow"><span>05</span> <span data-i18n="contact.eyebrow">Begin</span></p>
+            <h2 data-i18n="contact.title">Tell us how you like to travel</h2>
+            <p data-i18n="contact.lead">Write a few lines. We answer within two days with a route, a season, and an honest price.</p>
+            <ul class="contact-points">
+              <li data-i18n="contact.p1">Groups of 8–12, never more</li>
+              <li data-i18n="contact.p2">Guides who live in the city you visit</li>
+              <li data-i18n="contact.p3">No hidden extras on the invoice</li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name" data-i18n="form.name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+              <small class="error" data-error="name"></small>
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="form.email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <small class="error" data-error="email"></small>
+            </div>
+            <div class="field">
+              <label for="destination" data-i18n="form.destination">Destination</label>
+              <select id="destination" name="destination" required>
+                <option value="" data-i18n="form.choose">Choose a route</option>
+                <option value="herat" data-i18n="place.herat.title">Herat, the western lantern</option>
+                <option value="isfahan" data-i18n="place.isfahan.title">Isfahan, half the world</option>
+                <option value="samarkand" data-i18n="place.samarkand.title">Samarkand, the mosaic court</option>
+                <option value="cappadocia" data-i18n="place.cappadocia.title">Cappadocia, carved light</option>
+                <option value="hunza" data-i18n="place.hunza.title">Hunza, the high orchard</option>
+                <option value="khorasan" data-i18n="place.khorasan.title">Khorasan, saffron tables</option>
+              </select>
+              <small class="error" data-error="destination"></small>
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="form.message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <small class="error" data-error="message"></small>
+            </div>
+            <button class="btn btn-solid btn-full" type="submit" data-i18n="form.submit">Send the letter</button>
+            <p class="form-success" id="form-success" hidden data-i18n="form.success">Thank you. We will write back within two days.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="logo" href="#top">
+          <img src="images/logo.svg" alt="" />
+          <span>Saffron Roads</span>
+        </a>
+        <p data-i18n="footer.tagline">Slow journeys along the silk road.</p>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <h3 data-i18n="footer.visit">Visit</h3>
+          <p data-i18n="footer.address">Atelier No. 4, Herat Old City<br />Seasonal desk in Istanbul</p>
+        </div>
+        <div>
+          <h3 data-i18n="nav.destinations">Destinations</h3>
+          <a href="#destinations">Herat</a>
+          <a href="#destinations">Isfahan</a>
+          <a href="#destinations">Hunza</a>
+        </div>
+        <div>
+          <h3 data-i18n="footer.write">Write</h3>
+          <a href="mailto:hello@saffronroads.travel">hello@saffronroads.travel</a>
+          <a href="#contact" data-i18n="nav.plan">Plan a journey</a>
+        </div>
+      </div>
+      <p class="copyright" data-i18n="footer.rights">© 2026 Saffron Roads. Crafted with care.</p>
+    </footer>
+
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">&times;</button>
+        <img id="modal-image" alt="" />
+        <div class="modal-body">
+          <p class="eyebrow" id="modal-meta"></p>
+          <h2 id="modal-title"></h2>
+          <p id="modal-text"></p>
+          <a class="btn btn-solid" href="#contact" data-close-modal data-i18n="nav.plan">Plan a journey</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
